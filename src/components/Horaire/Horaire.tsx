@@ -12,8 +12,8 @@ const cours = [
     [],
     ["IFT585","IFT606","IGE401","IGL601","STT418"],
     [],
-    ["IGL301","IGE487","IGE511","IGE592","IFT615"],
-    ["IGE502","GRH121","IFT604","IGE692","IFT702"]
+    ["IGL301 - Spécification et vérification des exigences", "IGE487 - Modélisation de bases de données","IGE511 - Aspects informatiques du commerce électronique","IGE592","IFT615"],
+    ["IGE502 - Systèmes d'information dans les entreprises", "À voir", "IFT604 - Applications Internet et mobilité", "IGE692", "IFT702"]
 ];
 
 const transpose = (m: string[][]) => m[0].map((x, i) => m.map((x: { [x: string]: any; }) => x[i]))
@@ -50,7 +50,7 @@ const Horaire = () => {
                     >
                         {c.map((choix: string, index: number) => 
                             <td className={`${c[index] === undefined ? "bg-slate-900" : ""}`} key={index}>
-                                <a className="no-underline text-blue-600" target="_blank" href={lienUdes + choix}>{choix}</a>
+                                <a className="no-underline text-blue-600" target="_blank" href={lienUdes + choix?.substring(0, 6)}>{choix}</a>
                             </td>
                         )}
                     </tr>
