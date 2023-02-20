@@ -12,8 +12,18 @@ const cours = [
     [],
     ["IFT585","IFT606","IGE401","IGL601","STT418"],
     [],
-    ["IGL301 - Spécification et vérification des exigences", "IGE487 - Modélisation de bases de données","IGE511 - Aspects informatiques du commerce électronique","IGE592","IFT615"],
-    ["IGE502 - Systèmes d'information dans les entreprises", "À voir", "IFT604 - Applications Internet et mobilité", "IGE692", "IFT702"]
+    ["IGL301 - Spécification et vérification des exigences", 
+     "IGE487 - Modélisation de bases de données",
+     "IGE511 - Aspects informatiques du commerce électronique",
+     "IFT512 - Architecture de sécurité",
+     "IFT615 - Intelligence artificielle"
+    ],
+    [
+     "IGE502 - Systèmes d'information dans les entreprises", 
+     "IFT604 - Applications Internet et mobilité", 
+     "IGL691 - Projet multidisciplinaire II (6 crédits)", 
+     "CTB115 - Introduction à la comptabilité générale I (OPTIONNEL)"
+    ]
 ];
 
 const transpose = (m: string[][]) => m[0].map((x, i) => m.map((x: { [x: string]: any; }) => x[i]))
