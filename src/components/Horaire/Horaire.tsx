@@ -7,22 +7,23 @@ const sessions = [
 
 const cours = [
     ["IFT209","IFT232","IFT339","MAT115","IFT203"],
-    [],
+    ["Absolunet/Valtech"],
     ["IFT287","IFT320","IFT436","ADM124","MAR221"],
-    [],
+    ["Sherweb", "GRH121 - Gestion des ressources humaines"],
     ["IFT585","IFT606","IGE401","IGL601","STT418"],
-    [],
-    ["IGL301 - Spécification et vérification des exigences", 
+    ["Intact"],
+    [
+     "IGL301 - Spécification et vérification des exigences", 
      "IGE487 - Modélisation de bases de données",
-     "IGE511 - Aspects informatiques du commerce électronique",
-     "IFT512 - Architecture de sécurité",
-     "IFT615 - Intelligence artificielle"
+     "IFT604 - Applications Internet et mobilité",
+     "IGE592 - Projet en informatique de gestion I",
+     "CTB115-1 - Introduction à la comptabilité générale I"
     ],
     [
      "IGE502 - Systèmes d'information dans les entreprises", 
-     "IFT604 - Applications Internet et mobilité", 
-     "IGL691 - Projet multidisciplinaire II (6 crédits)", 
-     "CTB115 - Introduction à la comptabilité générale I (OPTIONNEL)"
+     "IGE511 - Aspects informatiques du commerce électronique",
+     "IFT512 - Architecture de sécurité ou IFT507 - Sécurité des logiciels",
+     "IGL691 - Projet multidisciplinaire II (6 crédits", 
     ]
 ];
 
