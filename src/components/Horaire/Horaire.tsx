@@ -33,12 +33,12 @@ const transpose = (m: string[][]) =>
 
 const Horaire = () => {
   return (
-    <table className="border-collapse w-full" id="cours">
+    <table className="w-full border-collapse" id="cours">
       <thead>
         <tr>
           {sessions[0].map((session, index) => (
             <th
-              className="bg-blue-600 text-blue-50 pt-3 pb-3 text-center"
+              className="bg-blue-600 pb-3 pt-3 text-center text-blue-50"
               key={index}
             >
               {session}
@@ -49,7 +49,7 @@ const Horaire = () => {
         <tr>
           {sessions[1].map((saison, index) => (
             <th
-              className="bg-gray-300 text-slate-900 pt-3 pb-3 text-center"
+              className="bg-gray-300 pb-3 pt-3 text-center text-slate-900"
               key={index}
             >
               {saison}
@@ -61,9 +61,7 @@ const Horaire = () => {
       <tbody>
         {transpose(cours).map((c: string[], index: number) => (
           <tr
-            className="bg-gray-50 [&:nth-child(odd)]:bg-gray-100
-                                  [&>td]:hover:bg-gray-200
-                                  text-center [&>td]:p-2"
+            className="bg-gray-50 text-center [&:nth-child(odd)]:bg-gray-100 [&>td]:p-2 [&>td]:hover:bg-gray-200"
             key={index}
           >
             {c.map((choix: string, index: number) => (
@@ -72,7 +70,7 @@ const Horaire = () => {
                 key={index}
               >
                 <a
-                  className="no-underline text-blue-600"
+                  className="text-blue-600 no-underline"
                   target="_blank"
                   href={lienUdes + choix?.substring(0, 6)}
                 >
